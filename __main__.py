@@ -1,3 +1,4 @@
+import customtkinter
 
 from cars.sedan import Sedan
 from cars.off_road import off_road
@@ -60,3 +61,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+app = customtkinter.CTk()
+app.mainloop()
