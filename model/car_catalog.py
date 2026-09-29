@@ -1,6 +1,6 @@
-from cars.off_road import off_road
-from cars.sedan import Sedan
-from cars.sport_car import sport_car
+from model.off_road import off_road
+from model.sedan import Sedan
+from model.sport_car import sport_car
 
 
 class CarCatalog:
@@ -54,14 +54,14 @@ class CarCatalog:
             sport_car('Koenigsegg', 'Jesko', 2021, 480, 2.8, 'disc'),
         ]
 
-    def sort_by_year(self):
-        self.cars.sort(key=lambda car: car.get_parameters('year'), reverse=True)
+    def sort_by_year(self, reverse=False):
+        self.cars.sort(key=lambda car: car.get_parameters('year'), reverse=reverse)
 
-    def sort_by_brand(self):
-        self.cars.sort(key=lambda car: car.get_parameters('brand'))
+    def sort_by_brand(self, reverse=False):
+        self.cars.sort(key=lambda car: car.get_parameters('brand'), reverse=reverse)
 
-    def sort_by_type(self):
-        self.cars.sort(key=lambda car: car.__class__.__name__)
+    def sort_by_type(self, reverse=False):
+        self.cars.sort(key=lambda car: car.__class__.__name__, reverse=reverse)
 
     def get_cars(self):
         return self.cars

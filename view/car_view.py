@@ -40,9 +40,8 @@ class CarView:
             buttons_frame,
             text='Sort by Brand',
             command=lambda: self.presenter.sort_by_brand(),
-            fg_color='#8b07ff',
+            fg_color='#49316b',
             hover_color='#11FF31',
-            text_color='#ff9100',
         ).grid(row=0, column=1, padx=5, pady=9, sticky='ew')
         customtkinter.CTkButton(
             buttons_frame,

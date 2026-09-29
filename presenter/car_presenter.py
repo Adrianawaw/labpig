@@ -2,21 +2,37 @@ class CarPresenter:
     def __init__(self, model, view):
         self.model = model
         self.view = view
+        self.sort_directions = {
+            'year': False,
+            'brand': False,
+            'type': False,
+        }
 
     def start(self):
-        self.sort_by_year()
+        self.model.sort_by_year()
+        self.view.show_cars(self._format_cars('Year (ascending)'))
 
     def sort_by_year(self):
-        self.model.sort_by_year()
-        self.view.show_cars(self._format_cars('Year (descending)'))
+        reverse = self.sort_directions['year']
+        self.model.sort_by_year(reverse)
+        self.view.show_cars(self._format_cars(self._sort_name('Year', reverse)))
+        self.sort_directions['year'] = not reverse
 
     def sort_by_brand(self):
-        self.model.sort_by_brand()
-        self.view.show_cars(self._format_cars('Brand (ascending)'))
+        reverse = self.sort_directions['brand']
+        self.model.sort_by_brand(reverse)
+        self.view.show_cars(self._format_cars(self._sort_name('Brand', reverse)))
+        self.sort_directions['brand'] = not reverse
 
     def sort_by_type(self):
-        self.model.sort_by_type()
-        self.view.show_cars(self._format_cars('Type (ascending)'))
+        reverse = self.sort_directions['type']
+        self.model.sort_by_type(reverse)
+        self.view.show_cars(self._format_cars(self._sort_name('Type', reverse)))
+        self.sort_directions['type'] = not reverse
+
+    def _sort_name(self, field_name, reverse):
+        direction = 'descending' if reverse else 'ascending'
+        return f'{field_name} ({direction})'
 
     def _format_cars(self, sort_name):
         lines = [f'Sorted by {sort_name}:', '']
