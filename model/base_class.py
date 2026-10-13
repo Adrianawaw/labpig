@@ -7,6 +7,7 @@ class BaseCar(Interface):
         self.parameters['brand'] = brand
         self.parameters['model'] = model
         self.parameters['year'] = year
+        self.parameters['image_path'] = ''
 
     def set_parameters(self, params, values):
         self.parameters[params] = values

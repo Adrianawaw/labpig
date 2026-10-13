@@ -30,6 +30,18 @@ class CarPresenter:
         self.view.show_cars(self._format_cars(self._sort_name('Type', reverse)))
         self.sort_directions['type'] = not reverse
 
+    def add_car(self, car):
+        self.model.add_car(car)
+        self.view.show_cars(self._format_cars('Current order'))
+
+    def remove_car(self, car):
+        self.model.remove_car(car)
+        self.view.show_cars(self._format_cars('Current order'))
+
+    def update_car(self, car):
+        self.model.save_cars()
+        self.view.show_cars(self._format_cars('Current order'))
+
     def _sort_name(self, field_name, reverse):
         direction = 'descending' if reverse else 'ascending'
         return f'{field_name} ({direction})'

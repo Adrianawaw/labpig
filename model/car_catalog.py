@@ -1,3 +1,6 @@
+import json
+from pathlib import Path
+
 from model.off_road import off_road
 from model.sedan import Sedan
 from model.sport_car import sport_car
@@ -53,6 +56,8 @@ class CarCatalog:
             sport_car('Lotus', 'Emira', 2022, 290, 4.3, 'disc'),
             sport_car('Koenigsegg', 'Jesko', 2021, 480, 2.8, 'disc'),
         ]
+        self.storage_path = Path(__file__).resolve().parent / 'data' / 'cars.json'
+        self._load_cars()
 
     def sort_by_year(self, reverse=False):
         self.cars.sort(key=lambda car: car.get_parameters('year'), reverse=reverse)
@@ -65,3 +70,67 @@ class CarCatalog:
 
     def get_cars(self):
         return self.cars
+
+    def add_car(self, car):
+        self.cars.append(car)
+        self.save_cars()
+
+    def remove_car(self, car):
+        if car in self.cars:
+            self.cars.remove(car)
+            self.save_cars()
+
+    def save_cars(self):
+        data = [
+            {
+                'type': car.__class__.__name__,
+                'parameters': car.parameters,
+            }
+            for car in self.cars
+        ]
+        self.storage_path.write_text(
+            json.dumps(data, ensure_ascii=False, indent=2),
+            encoding='utf-8',
+        )
+
+    def _load_cars(self):
+        if not self.storage_path.exists():
+            return
+
+        data = json.loads(self.storage_path.read_text(encoding='utf-8-sig'))
+        self.cars = [self._create_car(item) for item in data]
+
+    def _create_car(self, item):
+        parameters = item['parameters']
+        car_type = item['type']
+        common = (
+            parameters['brand'],
+            parameters['model'],
+            parameters['year'],
+        )
+        if car_type == 'Sedan':
+            car = Sedan(
+                *common,
+                parameters['doors'],
+                parameters['type_suspension'],
+                parameters['passenger_capacity'],
+            )
+        elif car_type == 'off_road':
+            car = off_road(
+                *common,
+                parameters['clearance_mm'],
+                parameters['transmision_type'],
+                parameters['differential_lock'],
+            )
+        elif car_type == 'sport_car':
+            car = sport_car(
+                *common,
+                parameters['max_speed'],
+                parameters['acceleration'],
+                parameters['brake_type'],
+            )
+        else:
+            raise ValueError(f'Unknown car type in storage: {car_type}')
+
+        car.set_parameters('image_path', parameters.get('image_path', ''))
+        return car

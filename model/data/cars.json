@@ -1,0 +1,554 @@
+[
+  {
+    "type": "off_road",
+    "parameters": {
+      "brand": "Mitsubishi",
+      "model": "Pajero",
+      "year": 2017,
+      "image_path": "C:/Users/undel/OneDrive/Рабочий стол/2025-Mitsubishi-Pajero-Sport-White-002.jpg",
+      "clearance_mm": 235,
+      "transmision_type": "automatic",
+      "differential_lock": true
+    }
+  },
+  {
+    "type": "Sedan",
+    "parameters": {
+      "brand": "Renault",
+      "model": "Talisman",
+      "year": 2018,
+      "image_path": "images/Renault-Talisman.jpg",
+      "doors": 4,
+      "type_suspension": "independent",
+      "passenger_capacity": 5
+    }
+  },
+  {
+    "type": "Sedan",
+    "parameters": {
+      "brand": "Skoda",
+      "model": "Superb",
+      "year": 2018,
+      "image_path": "images/Skoda-Superb.jpg",
+      "doors": 4,
+      "type_suspension": "independent",
+      "passenger_capacity": 5
+    }
+  },
+  {
+    "type": "off_road",
+    "parameters": {
+      "brand": "Suzuki",
+      "model": "Jimny",
+      "year": 2018,
+      "image_path": "images/Suzuki-Jimny.jpg",
+      "clearance_mm": 205,
+      "transmision_type": "manual",
+      "differential_lock": true
+    }
+  },
+  {
+    "type": "Sedan",
+    "parameters": {
+      "brand": "Ford",
+      "model": "Fusion",
+      "year": 2019,
+      "image_path": "images/Ford-Fusion.jpg",
+      "doors": 4,
+      "type_suspension": "independent",
+      "passenger_capacity": 5
+    }
+  },
+  {
+    "type": "off_road",
+    "parameters": {
+      "brand": "GMC",
+      "model": "Terrain",
+      "year": 2019,
+      "image_path": "images/GMC-Terrain.jpg",
+      "clearance_mm": 210,
+      "transmision_type": "automatic",
+      "differential_lock": true
+    }
+  },
+  {
+    "type": "sport_car",
+    "parameters": {
+      "brand": "Lamborghini",
+      "model": "Huracan",
+      "year": 2019,
+      "image_path": "images/Lamborghini-Huracan.jpg",
+      "max_speed": 325,
+      "acceleration": 3.2,
+      "brake_type": "disc"
+    }
+  },
+  {
+    "type": "Sedan",
+    "parameters": {
+      "brand": "Mazda",
+      "model": "6",
+      "year": 2019,
+      "image_path": "images/Mazda-6.jpg",
+      "doors": 4,
+      "type_suspension": "independent",
+      "passenger_capacity": 5
+    }
+  },
+  {
+    "type": "off_road",
+    "parameters": {
+      "brand": "Toyota",
+      "model": "Land Cruiser",
+      "year": 2019,
+      "image_path": "images/Toyota-Land_Cruiser.jpg",
+      "clearance_mm": 280,
+      "transmision_type": "automatic",
+      "differential_lock": true
+    }
+  },
+  {
+    "type": "sport_car",
+    "parameters": {
+      "brand": "BMW",
+      "model": "M4",
+      "year": 2020,
+      "image_path": "images/BMW-M4.jpg",
+      "max_speed": 290,
+      "acceleration": 4.0,
+      "brake_type": "disc"
+    }
+  },
+  {
+    "type": "Sedan",
+    "parameters": {
+      "brand": "Chevrolet",
+      "model": "Malibu",
+      "year": 2020,
+      "image_path": "images/Chevrolet-Malibu.jpg",
+      "doors": 4,
+      "type_suspension": "independent",
+      "passenger_capacity": 5
+    }
+  },
+  {
+    "type": "sport_car",
+    "parameters": {
+      "brand": "Chevrolet",
+      "model": "Corvette",
+      "year": 2020,
+      "image_path": "images/Chevrolet-Corvette.jpg",
+      "max_speed": 312,
+      "acceleration": 3.7,
+      "brake_type": "disc"
+    }
+  },
+  {
+    "type": "off_road",
+    "parameters": {
+      "brand": "Ford",
+      "model": "Bronco",
+      "year": 2020,
+      "image_path": "images/Ford-Bronco.jpg",
+      "clearance_mm": 270,
+      "transmision_type": "manual",
+      "differential_lock": true
+    }
+  },
+  {
+    "type": "off_road",
+    "parameters": {
+      "brand": "Ford",
+      "model": "Ranger",
+      "year": 2020,
+      "image_path": "images/Ford-Ranger.jpg",
+      "clearance_mm": 210,
+      "transmision_type": "manual",
+      "differential_lock": true
+    }
+  },
+  {
+    "type": "Sedan",
+    "parameters": {
+      "brand": "Hyundai",
+      "model": "Sonata",
+      "year": 2020,
+      "image_path": "images/Hyundai-Sonata.jpg",
+      "doors": 4,
+      "type_suspension": "independent",
+      "passenger_capacity": 5
+    }
+  },
+  {
+    "type": "sport_car",
+    "parameters": {
+      "brand": "Jaguar",
+      "model": "F-Type",
+      "year": 2020,
+      "image_path": "images/Jaguar-F-Type.jpg",
+      "max_speed": 300,
+      "acceleration": 4.0,
+      "brake_type": "disc"
+    }
+  },
+  {
+    "type": "off_road",
+    "parameters": {
+      "brand": "Jeep",
+      "model": "Wrangler",
+      "year": 2020,
+      "image_path": "images/Jeep-Wrangler.jpg",
+      "clearance_mm": 250,
+      "transmision_type": "manual",
+      "differential_lock": true
+    }
+  },
+  {
+    "type": "off_road",
+    "parameters": {
+      "brand": "Land Rover",
+      "model": "Discovery",
+      "year": 2020,
+      "image_path": "images/Land_Rover-Discovery.jpg",
+      "clearance_mm": 220,
+      "transmision_type": "automatic",
+      "differential_lock": true
+    }
+  },
+  {
+    "type": "sport_car",
+    "parameters": {
+      "brand": "McLaren",
+      "model": "720S",
+      "year": 2020,
+      "image_path": "images/McLaren-720S.jpg",
+      "max_speed": 341,
+      "acceleration": 2.9,
+      "brake_type": "disc"
+    }
+  },
+  {
+    "type": "sport_car",
+    "parameters": {
+      "brand": "Mercedes-Benz",
+      "model": "AMG GT",
+      "year": 2020,
+      "image_path": "images/Mercedes-Benz-AMG_GT.jpg",
+      "max_speed": 310,
+      "acceleration": 4.1,
+      "brake_type": "disc"
+    }
+  },
+  {
+    "type": "off_road",
+    "parameters": {
+      "brand": "Nissan",
+      "model": "Xterra",
+      "year": 2020,
+      "image_path": "images/Nissan-Xterra.jpg",
+      "clearance_mm": 250,
+      "transmision_type": "manual",
+      "differential_lock": true
+    }
+  },
+  {
+    "type": "sport_car",
+    "parameters": {
+      "brand": "Porsche",
+      "model": "911",
+      "year": 2020,
+      "image_path": "images/Porsche-911.jpg",
+      "max_speed": 330,
+      "acceleration": 3.5,
+      "brake_type": "disc"
+    }
+  },
+  {
+    "type": "Sedan",
+    "parameters": {
+      "brand": "Toyota",
+      "model": "Camry",
+      "year": 2020,
+      "image_path": "images/Toyota-Camry.jpg",
+      "doors": 4,
+      "type_suspension": "independent",
+      "passenger_capacity": 5
+    }
+  },
+  {
+    "type": "off_road",
+    "parameters": {
+      "brand": "Toyota",
+      "model": "4Runner",
+      "year": 2020,
+      "image_path": "images/Toyota-4Runner.jpg",
+      "clearance_mm": 230,
+      "transmision_type": "manual",
+      "differential_lock": true
+    }
+  },
+  {
+    "type": "Sedan",
+    "parameters": {
+      "brand": "Volkswagen",
+      "model": "Passat",
+      "year": 2020,
+      "image_path": "images/Volkswagen-Passat.jpg",
+      "doors": 4,
+      "type_suspension": "independent",
+      "passenger_capacity": 5
+    }
+  },
+  {
+    "type": "sport_car",
+    "parameters": {
+      "brand": "Aston Martin",
+      "model": "Vantage",
+      "year": 2021,
+      "image_path": "images/Aston_Martin-Vantage.jpg",
+      "max_speed": 314,
+      "acceleration": 3.6,
+      "brake_type": "disc"
+    }
+  },
+  {
+    "type": "sport_car",
+    "parameters": {
+      "brand": "Audi",
+      "model": "R8",
+      "year": 2021,
+      "image_path": "images/Audi-R8.jpg",
+      "max_speed": 330,
+      "acceleration": 3.9,
+      "brake_type": "disc"
+    }
+  },
+  {
+    "type": "off_road",
+    "parameters": {
+      "brand": "Chevrolet",
+      "model": "Blazer",
+      "year": 2021,
+      "image_path": "images/Chevrolet-Blazer.jpg",
+      "clearance_mm": 260,
+      "transmision_type": "automatic",
+      "differential_lock": true
+    }
+  },
+  {
+    "type": "sport_car",
+    "parameters": {
+      "brand": "Ferrari",
+      "model": "488",
+      "year": 2021,
+      "image_path": "images/Ferrari-488.jpg",
+      "max_speed": 330,
+      "acceleration": 3.0,
+      "brake_type": "disc"
+    }
+  },
+  {
+    "type": "sport_car",
+    "parameters": {
+      "brand": "Ford",
+      "model": "Mustang",
+      "year": 2021,
+      "image_path": "images/Ford-Mustang.jpg",
+      "max_speed": 290,
+      "acceleration": 4.4,
+      "brake_type": "disc"
+    }
+  },
+  {
+    "type": "Sedan",
+    "parameters": {
+      "brand": "Honda",
+      "model": "Accord",
+      "year": 2021,
+      "image_path": "images/Honda-Accord.jpg",
+      "doors": 4,
+      "type_suspension": "independent",
+      "passenger_capacity": 5
+    }
+  },
+  {
+    "type": "off_road",
+    "parameters": {
+      "brand": "Jeep",
+      "model": "Cherokee",
+      "year": 2021,
+      "image_path": "images/Jeep-Cherokee.jpg",
+      "clearance_mm": 240,
+      "transmision_type": "automatic",
+      "differential_lock": true
+    }
+  },
+  {
+    "type": "Sedan",
+    "parameters": {
+      "brand": "Kia",
+      "model": "Optima",
+      "year": 2021,
+      "image_path": "images/Kia-Optima.jpg",
+      "doors": 4,
+      "type_suspension": "independent",
+      "passenger_capacity": 5
+    }
+  },
+  {
+    "type": "sport_car",
+    "parameters": {
+      "brand": "Koenigsegg",
+      "model": "Jesko",
+      "year": 2021,
+      "image_path": "images/Koenigsegg-Jesko.jpg",
+      "max_speed": 480,
+      "acceleration": 2.8,
+      "brake_type": "disc"
+    }
+  },
+  {
+    "type": "off_road",
+    "parameters": {
+      "brand": "Land Rover",
+      "model": "Defender",
+      "year": 2021,
+      "image_path": "images/Land_Rover-Defender.jpg",
+      "clearance_mm": 300,
+      "transmision_type": "automatic",
+      "differential_lock": true
+    }
+  },
+  {
+    "type": "Sedan",
+    "parameters": {
+      "brand": "Nissan",
+      "model": "Altima",
+      "year": 2021,
+      "image_path": "images/Nissan-Altima.jpg",
+      "doors": 4,
+      "type_suspension": "independent",
+      "passenger_capacity": 5
+    }
+  },
+  {
+    "type": "sport_car",
+    "parameters": {
+      "brand": "Nissan",
+      "model": "GT-R",
+      "year": 2021,
+      "image_path": "images/Nissan-GT-R.jpg",
+      "max_speed": 315,
+      "acceleration": 3.8,
+      "brake_type": "disc"
+    }
+  },
+  {
+    "type": "Sedan",
+    "parameters": {
+      "brand": "Subaru",
+      "model": "Legacy",
+      "year": 2021,
+      "image_path": "images/Subaru-Legacy.jpg",
+      "doors": 4,
+      "type_suspension": "independent",
+      "passenger_capacity": 5
+    }
+  },
+  {
+    "type": "off_road",
+    "parameters": {
+      "brand": "Dacia",
+      "model": "Duster",
+      "year": 2022,
+      "image_path": "images/Dacia-Duster.jpg",
+      "clearance_mm": 210,
+      "transmision_type": "manual",
+      "differential_lock": true
+    }
+  },
+  {
+    "type": "off_road",
+    "parameters": {
+      "brand": "Hummer",
+      "model": "EV",
+      "year": 2022,
+      "image_path": "images/Hummer-EV.jpg",
+      "clearance_mm": 300,
+      "transmision_type": "automatic",
+      "differential_lock": true
+    }
+  },
+  {
+    "type": "Sedan",
+    "parameters": {
+      "brand": "Lexus",
+      "model": "ES",
+      "year": 2022,
+      "image_path": "images/Lexus-ES.jpg",
+      "doors": 4,
+      "type_suspension": "independent",
+      "passenger_capacity": 5
+    }
+  },
+  {
+    "type": "sport_car",
+    "parameters": {
+      "brand": "Lotus",
+      "model": "Emira",
+      "year": 2022,
+      "image_path": "images/Lotus-Emira.jpg",
+      "max_speed": 290,
+      "acceleration": 4.3,
+      "brake_type": "disc"
+    }
+  },
+  {
+    "type": "Sedan",
+    "parameters": {
+      "brand": "Peugeot",
+      "model": "508",
+      "year": 2022,
+      "image_path": "images/Peugeot-508.jpg",
+      "doors": 4,
+      "type_suspension": "independent",
+      "passenger_capacity": 5
+    }
+  },
+  {
+    "type": "Sedan",
+    "parameters": {
+      "brand": "Tesla",
+      "model": "Model 3",
+      "year": 2022,
+      "image_path": "images/Tesla-Model_3.jpg",
+      "doors": 4,
+      "type_suspension": "independent",
+      "passenger_capacity": 5
+    }
+  },
+  {
+    "type": "sport_car",
+    "parameters": {
+      "brand": "Toyota",
+      "model": "Supra",
+      "year": 2022,
+      "image_path": "images/Toyota-Supra.jpg",
+      "max_speed": 250,
+      "acceleration": 4.1,
+      "brake_type": "disc"
+    }
+  },
+  {
+    "type": "Sedan",
+    "parameters": {
+      "brand": "Volvo",
+      "model": "S90",
+      "year": 2022,
+      "image_path": "images/Volvo-S90.jpg",
+      "doors": 4,
+      "type_suspension": "independent",
+      "passenger_capacity": 5
+    }
+  }
+]
