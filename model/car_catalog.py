@@ -65,11 +65,68 @@ class CarCatalog:
     def sort_by_brand(self, reverse=False):
         self.cars.sort(key=lambda car: car.get_parameters('brand'), reverse=reverse)
 
+    def sort_by_model(self, reverse=False):
+        self.cars.sort(key=lambda car: car.get_parameters('model'), reverse=reverse)
+
     def sort_by_type(self, reverse=False):
         self.cars.sort(key=lambda car: car.__class__.__name__, reverse=reverse)
 
     def get_cars(self):
         return self.cars
+
+    def get_cars_by_type(self, car_type):
+        if car_type == 'All':
+            return self.cars
+        return [
+            car for car in self.cars
+            if car.__class__.__name__.replace('_', ' ').title() == car_type
+        ]
+
+    def get_performance_data(self):
+        return [
+            {
+                'model': car.get_parameters('model'),
+                'brand': car.get_parameters('brand'),
+                'speed': car.get_parameters('max_speed'),
+                'acceleration': car.get_parameters('acceleration'),
+                'type': car.__class__.__name__.replace('_', ' ').title(),
+            }
+            for car in self.cars
+            if car.get_parameters('max_speed') is not None
+        ]
+
+    def get_statistics(self):
+        years = [car.get_parameters('year') for car in self.cars]
+        speeds = self.get_performance_data()
+        fastest = max(speeds, key=lambda car: car['speed'], default=None)
+        return {
+            'total': len(self.cars),
+            'first_year': min(years, default='-'),
+            'last_year': max(years, default='-'),
+            'fastest': (
+                f"{fastest['brand']} {fastest['model']} "
+                f"({fastest['speed']} km/h)"
+                if fastest else '-'
+            ),
+        }
+
+    def get_type_distribution(self):
+        return self._get_distribution(
+            lambda car: car.__class__.__name__.replace('_', ' ').title()
+        )
+
+    def get_year_distribution(self):
+        return self._get_distribution(lambda car: str(car.get_parameters('year')))
+
+    def get_model_distribution(self):
+        return self._get_distribution(lambda car: car.get_parameters('model'))
+
+    def _get_distribution(self, key_factory):
+        distribution = {}
+        for car in self.cars:
+            key = key_factory(car)
+            distribution[key] = distribution.get(key, 0) + 1
+        return dict(sorted(distribution.items()))
 
     def add_car(self, car):
         self.cars.append(car)

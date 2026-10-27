@@ -550,5 +550,17 @@
       "type_suspension": "independent",
       "passenger_capacity": 5
     }
+  },
+  {
+    "type": "off_road",
+    "parameters": {
+      "brand": "Mitsubishi",
+      "model": "Pajero",
+      "year": 2019,
+      "image_path": "",
+      "clearance_mm": 22,
+      "transmision_type": "full",
+      "differential_lock": true
+    }
   }
 ]
