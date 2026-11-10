@@ -3,6 +3,7 @@ from model.interface import Interface
 
 class BaseCar(Interface):
     def __init__(self, brand, model, year):
+        self.database_id = None
         self.parameters = {}
         self.parameters['brand'] = brand
         self.parameters['model'] = model

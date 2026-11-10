@@ -1,3 +1,4 @@
 customtkinter
 Pillow
 matplotlib
+psycopg[binary]
